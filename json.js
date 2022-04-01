@@ -17,7 +17,7 @@ const rabbit = {
   size: null,
   birthDate: new Date(),
   jump: () => {
-    console.log(`${name} can jump!`);
+    console.log(`${rabbit.name} can jump!`);
   },
 };
 
@@ -35,7 +35,7 @@ console.log(json);
 
 // 2. JSON to Object
 // parse(json)   json을 object로 변경
-console.clear();
+//console.clear();
 
 json = JSON.stringify(rabbit);
 const obj = JSON.parse(json, (key, value) => {
