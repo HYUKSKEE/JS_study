@@ -1,6 +1,6 @@
 "use strict";
 
-// async % await
+// async & await
 // clear style of using promise :>
 
 // 1. async  promise()를 간편하게 쓸 수 있는 synthetic sugar
