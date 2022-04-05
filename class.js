@@ -21,7 +21,7 @@ class Person{
     }
 }
 
-const hyukskee = new Person('hyukskee', 20);
+const hyukskee = new Person(id:'hyukskee', 20);
 console.log(hyukskee.name);
 console.log(hyukskee.age);
 hyukskee.speakHEllo();
