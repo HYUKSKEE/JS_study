@@ -4,7 +4,7 @@
 //Callback to Promise
 
 class UserStorage {
-  loginUser(id, password) {
+  async loginUser(id, password) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (
