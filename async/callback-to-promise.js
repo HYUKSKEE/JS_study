@@ -1,7 +1,5 @@
 "use strict";
-
-//Callback Hell example
-//Callback to Promise
+// Promise to async await
 
 class UserStorage {
   delay(ms) {
@@ -28,7 +26,6 @@ class UserStorage {
     }
   }
 }
-
 const userStorage = new UserStorage();
 const id = prompt("enter your id");
 const password = prompt("enter your password");
@@ -41,6 +38,8 @@ async function findUserRole() {
 }
 
 findUserRole().then().catch(console.log);
+
+// callback to promise
 /* 
   "use strict";
 
