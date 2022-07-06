@@ -83,3 +83,44 @@ userStorage
   .then(userStorage.getRoles)
   .then((user) => alert(`Hello ${user.name}, you have a ${user.role} role`))
   .catch(console.log); */
+
+// callback to promise
+/* 
+  "use strict";
+
+//Callback Hell example
+//Callback to Promise
+
+class UserStorage {
+  delay(ms) {return new Promise(resolve) => setTimeout(resolve, ms);
+  async loginUser(id, password) {
+    await this.delay(2000)
+        if (
+          (id === "hyukskee" && password === "dream") ||
+          (id === "coder" && password === "academy")
+        ) {
+          return id;
+        } else {
+          throw "not found";
+        }
+  }
+
+  getRoles(user) {
+    await this.delay(1000)
+        if (user === "hyukskee") {
+          return({ name: "hyukskee", role: "admin" });
+        } else {
+          throw "no access";
+        }
+      }
+  }
+}
+
+const userStorage = new UserStorage();
+const id = prompt("enter your id");
+const password = prompt("enter your password");
+userStorage
+  .loginUser(id, password)
+  .then(userStorage.getRoles)
+  .then((user) => alert(`Hello ${user.name}, you have a ${user.role} role`))
+  .catch(console.log); */
